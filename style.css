@@ -151,3 +151,36 @@ section {
     object-fit: scale-down; /* Ensures image maintains proportions */
 }
 
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #ff0077, #00ffcc, #ffcc00, #663399);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite alternate;
+    text-align: center;
+    padding: 0 2rem;
+    color: white;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.project-card {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 0, 119, 0.5);
+}
+
+
