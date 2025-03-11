@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taarush Vashisht | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <title> Taarush Vashisht | Tech Enthusiast</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -13,47 +13,138 @@
             <div class="logo">TV</div>
             <ul>
                 <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <section id="home">
-        <img src="me.jpg" alt="My Photo" class="profile-pic">
-        <h1>Hey, I’m Taarush Vashisht</h1>
-        <p>Aspiring Software engineer | Master’s in Progress</p>
+        <h1 class="fade-in">Hey, I’m Taarush Vashisht</h1>
+        <p>Aspiring Software Engineer | Master’s in Progress</p>
         <a href="#projects" class="btn">See My Projects</a>
     </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <a href="Taarush_Vashisht_Resume.pdf" download="Taarush_Vashisht_Resume" class="btn resume-btn">Download Resume</a>
+
+        <p>
+            I am a Software Engineer with <strong>2 years of experience</strong> in software development, specializing in C++, C# 
+            and backend development. With a strong foundation in Object-Oriented Programming (OOP) and experience in Windows Services, 
+            WPF, and RESTful APIs, I enjoy building efficient and scalable software solutions.
+        </p>
+        <p>
+            I have worked as a Technology Specialist at ProHance, where I played a key role in migrating legacy WinForms 
+            applications to WPF, optimizing performance, and enhancing UI/UX. Previously, at Amdocs, I gained hands-on 
+            experience with databases (Snowflake), cloud computing (Azure), and DevOps tools (Docker, Jenkins).
+        </p>
+        <p>
+            My passion for Machine Learning and Deep Learning led me to conduct NLP research at NIT Hamirpur, where I 
+            developed Neural and Phrase-Based translation models for low-resource languages using PyTorch, Moses, and fastText.
+        </p>
+        <p>
+            Beyond software, I have experience in game development using Unreal Engine 4 (UE4).
+             I am always eager to explore new technologies, solve challenging problems, and create impactful solutions.
+        </p>
+    </section>
+    
+
     <section id="projects">
         <h2>Projects</h2>
         <div class="project-grid">
+    
             <div class="project-card">
-                <h3>Unreal Engine 4: Movable Character Game</h3>
-                <p>Created a 3D game in Unreal Engine 4 featuring a movable character with physics-based movement and animations. Programmed in C++ using OOP principles, integrated collision handling, and synced MIXAMO animation presets for walking, running, and jumping.</p>
+                <h3>Unreal Engine 4 Game</h3>
+                <p>3D game with physics-based movement in UE4 using C++.</p>
+                <a href="https://github.com/electleaf/UE4" class="btn">View on GitHub</a>
             </div>
+    
             <div class="project-card">
-                <h3>Retail Product Classification with Transfer Learning</h3>
-                <p>Developed a model to classify retail product images and descriptions into categories using TensorFlow, Matplotlib, and Python. Leveraged a Convolutional Neural Network (CNN) for image classification and an LSTM network for text descriptions, enhancing accuracy through transfer learning.</p>
+                <h3>Retail Product Classification</h3>
+                <p>Used deep learning (CNN + LSTM) to classify products.</p>
             </div>
-            <div class="project-card">
-                <h3>Neural and Phrase-Based Machine Translation</h3>
-                <p>Built a translation system for low-resource languages, extending Facebook AI’s English-to-French/German model to English-Hindi. Utilized PyTorch, Moses, and fastText with a transformer architecture and phrase tables, achieving a BLEU score of 4.4.</p>
-            </div>
+    
         </div>
     </section>
+    
+
     <section id="skills">
         <h2>Skills</h2>
-        <ul class="skills-list">
-            <li>C#</li>
-            <li>C++</li>
-            <li>Deep Learning</li>
-        </ul>
+        
+        <div class="skill-category">
+            <h3>Programming & Development</h3>
+            <ul class="skills-list">
+                <li>C++</li>
+                <li>C#</li>
+                <li>Python</li>
+                <li>Bash</li>
+                <li>Backend Development</li>
+                <li>Object-Oriented Programming</li>
+                <li>Windows Service</li>
+                <li>WPF</li>
+                <li>Windows Forms</li>
+                <li>RESTful APIs</li>
+                <li>Software Development Process</li>
+                <li>Data Structures & Algorithms</li>
+                <li>Machine Learning</li>
+                <li>Deep Learning</li>
+            </ul>
+        </div>
+    
+        <div class="skill-category">
+            <h3>Analytics & Technologies</h3>
+            <ul class="skills-list">
+                <li>MySQL</li>
+                <li>SQLite</li>
+                <li>Snowflake</li>
+                <li>TensorFlow</li>
+                <li>Flask</li>
+                <li>Postman</li>
+                <li>Unreal Engine 4</li>
+                <li>Power BI</li>
+                <li>Docker</li>
+                <li>Cloud Computing</li>
+                <li>Operating Systems</li>
+                <li>Git</li>
+            </ul>
+        </div>
+    
+        <div class="skill-category">
+            <h3>Media & Creative Tools</h3>
+            <ul class="skills-list">
+                <li>Adobe Premiere Pro</li>
+                <li>Adobe Audition</li>
+                <li>Adobe After Effects</li>
+            </ul>
+        </div>
     </section>
+    
+
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: taarushvashisht.127@gmail.com | <a href="https://www.linkedin.com/in/taarush-vashisht-7b742217">LinkedIn</a></p>
+        <p>Email: <span id="email">taarushvashisht.127@gmail.com</span> 
+        <button id="copyEmail">Copy</button></p>
+        
+        <div class="social-icons">
+            <section id="Socials">
+                <h2>Socials</h2>
+                <a href="https://github.com/electleaf" target="_blank">
+                    <img src="github.svg.png" alt="GitHub">
+                </a>
+                <a href="https://linkedin.com/in/taarush-vashisht-7b7422177" target="_blank">
+                    <img src="linkedin.svg.png" alt="LinkedIn">
+                </a>
+            </section>
+           
+        </div>
     </section>
+    
+
+    <button id="scrollTop">↑</button>
+    
     <script src="script.js"></script>
 </body>
 </html>
